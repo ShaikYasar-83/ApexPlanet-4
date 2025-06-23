@@ -1,0 +1,141 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f7f9fc;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header {
+    background: #007a7a; /* slightly brighter */
+    padding: 1.2rem;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.8rem;
+  }
+  
+  nav button {
+    margin: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    background: white;
+    color: #007a7a;
+    border: 2px solid #007a7a;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  nav button:hover,
+  nav button:focus {
+    background-color: #007a7a;
+    color: white;
+    outline: none;
+  }
+  
+  .section {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .portfolio-cards {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+    flex: 1 1 220px;
+    max-width: 300px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .card:hover,
+  .card:focus-within {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    transform: translateY(-4px);
+    outline: none;
+  }
+  
+  #taskInput {
+    padding: 0.7rem;
+    margin: 1.2rem 0;
+    width: 100%;
+    max-width: 300px;
+    border: 2px solid #007a7a;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  #taskInput:focus {
+    border-color: #004d4d;
+    outline: none;
+  }
+  
+  #taskList li {
+    margin: 0.6rem 0;
+    background: #d4f0f0;
+    padding: 0.7rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  #taskList li:hover,
+  #taskList li:focus {
+    background-color: #a8d7d7;
+    outline: none;
+  }
+  
+  #productContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    justify-content: center;
+  }
+  
+  .product {
+    background: white;
+    padding: 1.2rem;
+    border-radius: 10px;
+    width: 220px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .product:hover,
+  .product:focus-within {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    transform: translateY(-4px);
+    outline: none;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 700px) {
+    .portfolio-cards,
+    #productContainer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav button {
+      width: 100%;
+      max-width: 200px;
+    }
+  }
+  
